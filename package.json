@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "prettier --write . && git add -A ."
+    }
+  },
   "scripts": {
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules ./src/shared/infra/http/server.ts"
   },
   "dependencies": {
     "express": "^4.17.1",
+    "husky": "^7.0.4",
     "mysql": "^2.18.1",
     "typeorm": "^0.2.40"
   },
