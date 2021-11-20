@@ -7,9 +7,9 @@
   "database": "my_books",
   "entities": ["/src/modules/**/typeorm/entities/*.ts"],
   "migrations": [
-    "/src/shared/infra/typeorm/migrations/*.ts"
+    "src/shared/infra/typeorm/migrations"
   ],
   "cli": {
-    "migrationsDir": "/src/shared/infra/typeorm/migrations/"
+    "migrationsDir": "src/shared/infra/typeorm/migrations"
   }
 }
