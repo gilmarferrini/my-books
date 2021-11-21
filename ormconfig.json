@@ -6,9 +6,7 @@
   "password": "root",
   "database": "my_books",
   "entities": ["/src/modules/**/typeorm/entities/*.ts"],
-  "migrations": [
-    "src/shared/infra/typeorm/migrations"
-  ],
+  "migrations": ["src/shared/infra/typeorm/migrations"],
   "cli": {
     "migrationsDir": "src/shared/infra/typeorm/migrations"
   }
